@@ -1,12 +1,12 @@
 import express, { Request, Response } from "express"
 import cors from "cors"
 import "dotenv/config"
-import mongoose from "mongoose"
 import myUserRoute from "./routes/myUser.route"
 import myRestaurantRoute from "./routes/myRestaurant.route"
 import restaurantRoute from "./routes/restaurant.route"
 import orderRoute from "./routes/order.route"
 import { v2 as cloudinary } from "cloudinary"
+import mongoose from "mongoose"
 
 mongoose
   .connect(process.env.MONGO_URI as string)
