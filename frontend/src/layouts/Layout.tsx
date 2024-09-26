@@ -22,3 +22,6 @@ const Layout = ({ children, showhero = false }: Props) => {
 }
 
 export default Layout
+
+
+// layout for the app
